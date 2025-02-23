@@ -1247,30 +1247,32 @@ hr{
 .page13>.last span{
     color: var(--color-red-dark);
 }
-.scoll{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    background-color: var(--color-red-dark);
-    position: relative;
-    right: -1459px;
-    top: -100px;
-    
-}
-.scoll i{
-    font-size: xx-large;
-    color: var(--color-white);
-    position: absolute;
-    right: 15px;
-    top: 10px;
-}
-html{
-    scroll-behavior: smooth;
-}
-.scoll1{
-    /* position: fixed; */
-    z-index: 1;
+.scroll-btn{
+  position:fixed;
+  right: 50px;
+  bottom: 100px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 40px;
+  background-color: var(--color-red-dark);
 }
 
+html{
+  scroll-behavior:smooth;
+  transition-delay: 3s;
+}
+::-webkit-scrollbar{
+   width: 20px;
+   height: 100%;
+}
+::-webkit-scrollbar-thumb{
+  background-color:var(--color-black);
+}
+::-webkit-scrollbar-track{
+  background-color: var(--color-red-dark);
+}
