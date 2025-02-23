@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOS Scroll Animations</title>
+
+    <!-- AOS Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- First Section with Animation -->
+    <section data-aos="fade-up" data-aos-duration="1500">
+        <div class="content">
+            <h2>Fade Up Animation</h2>
+            <p>This section will fade up when scrolled into view.</p>
+        </div>
+    </section>
+
+    <!-- Second Section with Animation -->
+    <section data-aos="zoom-in" data-aos-duration="1500">
+        <div class="content">
+            <h2>Zoom In Animation</h2>
+            <p>This section will zoom in when scrolled into view.</p>
+        </div>
+    </section>
+
+    <!-- Third Section with Animation -->
+    <section data-aos="flip-left" data-aos-duration="1500" data-aos-delay="300">
+        <div class="content">
+            <h2>Flip Left Animation</h2>
+            <p>This section will flip from the left when scrolled into view.</p>
+        </div>
+    </section>
+
+    <!-- Fourth Section with Animation -->
+    <section data-aos="slide-up" data-aos-duration="1500" data-aos-delay="500">
+        <div class="content">
+            <h2>Slide Up Animation</h2>
+            <p>This section will slide up when scrolled into view.</p>
+        </div>
+    </section>
+
+    <!-- Fifth Section with Animation -->
+    <section data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
+        <div class="content">
+            <h2>Fade In Animation</h2>
+            <p>This section will fade in when scrolled into view.</p>
+        </div>
+    </section>
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1200, // Duration of the animation
+            easing: 'ease-out', // Easing function for the animation
+            once: true, // Animations will only happen once
+            offset: 100 // Distance from the top of the viewport to trigger the animation
+        });
+    </script>
+
+</body>
+</html>
